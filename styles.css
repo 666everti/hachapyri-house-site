@@ -238,6 +238,14 @@ ul.topnav li.icon {
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
+  .home h1 {
+    font-size: 2em;
+    line-height: 1em;
+  }
+  .home p {
+    line-height: 1em;
+  }
+
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -257,6 +265,15 @@ ul.topnav li.icon {
 }
 
 @media (max-width: 480px) {
+  .home h1 {
+    font-size: 4em;
+    line-height: 1em;
+    margin-bottom: 40px;
+  }
+  .home p {
+    font-size: 1.7em;
+    line-height: 1.3em;
+  }
   .menu-grid {
     grid-template-columns: 1fr;
   }
