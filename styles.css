@@ -138,6 +138,7 @@ ul.topnav li.icon {
   font-weight: 800;
   color: #ffffff;
   text-align: center;
+  line-height: 1em;
 }
 
 .home h1 span {
@@ -166,6 +167,7 @@ ul.topnav li.icon {
   font-size: 4em;
   margin-bottom: 1em;
   font-family: 'Marck Script';
+  text-align: center;
 }
 .menu p{
   font-size: 1.2em;
@@ -214,6 +216,7 @@ ul.topnav li.icon {
   font-size: 1.6em;
   font-family: 'Shantell Sans';
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .menu-item img {
