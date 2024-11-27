@@ -170,6 +170,7 @@ ul.topnav li.icon {
   text-align: center;
 }
 .menu p{
+  background-color: #f8f8f8d7;
   font-size: 1.2em;
   font-family: 'Bellota';
   text-align: center;
@@ -218,8 +219,13 @@ ul.topnav li.icon {
   margin-bottom: 20px;
   text-align: center;
 }
+.menu-item h3 span{
+  color: #fc0;
+  filter: drop-shadow(0 0 0.03em black);
+}
 
 .menu-item img {
+  border: 2px solid #fc0;
   border-radius: 10px;
   filter: drop-shadow(0 0 2px black);
   width: 90%;
@@ -227,11 +233,15 @@ ul.topnav li.icon {
   object-fit: cover;
   margin-bottom: 10px;
 }
-.menu-item span{
-  font-size: 1.5em;
+.menu-item h4{
+  font-size: 1.3em;
   margin-top: auto;
+  border: 2px solid #fc0;
+  border-radius: 1em;
+  padding: 0.2em;
 }
-.menu-item span:after { content: ' \20BD'; }
+
+.menu-item h4 span:after { content: ' \20BD'; }
 .menu p{
   padding: 25px;
 }
@@ -239,13 +249,14 @@ ul.topnav li.icon {
 /* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
   .home h1 {
-    font-size: 2em;
+    font-size: 4em;
     line-height: 1em;
+    margin-bottom: 40px;
   }
   .home p {
-    line-height: 1em;
+    font-size: 1.7em;
+    line-height: 1.3em;
   }
-
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
   }
