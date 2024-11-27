@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Marck+Script&family=Oswald:wght@200..700&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.text-logo {
+  font-family: 'Marck Script';
+  float: left;
+  padding: 12px 20px;
+  font-size: 26px;
+  font-weight: 300;
+  color: #000;
+  border-radius: .1em 2em .1em 2em;
+  filter: drop-shadow(0 0 10px black);
+  background-color: #fc0;
+}
+
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #33333300;
+}
+
+ul.topnav li {
+  float: left;
+}
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 22px;
+}
+ul.topnav li a:hover {
+  background-color: #b8b8b877;
+}
+ul.topnav li.icon {
+  display: none;
+}
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: left;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 680px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Header и Навигация */
+.header {
+  font-family: "Oswald";
+  font-size: 1em;
+  background-color: #33333353;
+  color: #fff;
+  padding: 0.1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.header .navbar-logo {
+  display: inline-block;
+  color: #ffdd00;
+}
+
+
+/* .nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ccc;
+} */
+
+/* Секции */
+.section {
+  padding: 2em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  background-image: url("images/mainimage1.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.home h1 {
+  filter: drop-shadow(1px 1px 1px black);
+  font-size: 5em;
+  font-family: "Marck Script";
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+}
+
+.home h1 span {
+  color: #ffdd00;
+}
+
+.home p {
+  line-height: 1em;
+  filter: drop-shadow(1px 1px 1px black);
+  font-size: 2em;
+  font-family: "Marck Script";
+  color: #dadada;
+  text-align: center;
+}
+
+.menu {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: flex-start;
+  background-image: url("images/fon-menu.png");
+}
+
+.menu h2{
+  color: #fc0;
+  filter: drop-shadow(0 0 1px black);
+  font-size: 4em;
+  margin-bottom: 1em;
+  font-family: 'Marck Script';
+}
+.menu p{
+  font-size: 1.2em;
+  font-family: 'Bellota';
+  text-align: center;
+}
+
+.about {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: flex-start;
+  background-image: url("images/fon-about.png");
+}
+
+.contact {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  background-image: url("images/fon-contact.png");
+}
+
+/* Меню Грид */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 20px;
+  padding: 10px;
+  transition: .3s ease-out;
+}
+
+.menu-item:hover{
+  transform: scale(1.01);
+}
+
+.menu-item h3{
+  margin-top: 1em;
+  font-size: 1.6em;
+  font-family: 'Shantell Sans';
+  margin-bottom: 20px;
+}
+
+.menu-item img {
+  border-radius: 10px;
+  filter: drop-shadow(0 0 2px black);
+  width: 90%;
+  height: 500px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.menu-item span{
+  font-size: 1.5em;
+  margin-top: auto;
+}
+.menu-item span:after { content: ' \20BD'; }
+.menu p{
+  padding: 25px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr ;
+  }
+  .about-grid .text1{
+    grid-column: 1;
+  }
+  .about-grid .text1{
+    grid-column: 1;
+  }
+  .about-grid .text1{
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .about-grid .text1{
+    grid-column: 1;
+  }
+  .about-grid .text1{
+    grid-column: 1;
+  }
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav li {
+    margin-bottom: 10px;
+  }
+}
+
+/* .about h2{
+
+} */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  padding: 10px;
+  gap: 10px; 
+}
+
+.about-grid .imgbox1 {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #767676ab;
+  
+}
+.about-grid .imgbox2 {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #767676ab;
+  
+}
+.about-grid .imgbox3 {
+  grid-column: 1;
+  grid-row: 3;
+  background-color: #767676ab;
+}
+
+.text1{
+  grid-column: 2;
+  grid-row: 1; 
+  padding: 10px; 
+}
+.text2{
+  grid-column: 3;
+  grid-row: 2; 
+  padding: 10px; 
+}
+.text3{
+  grid-column: 2;
+  grid-row: 3; 
+  padding: 10px; 
+}
+.text p{
+  font-family: 'Marck Script';
+  font-weight: 600;
+}
+.text h2{
+  font-family: 'Marck Script';
+  font-weight: 800;
+  font-size: 2em;
+  color: #fc0;
+  filter: drop-shadow(0 0 4px black);
+}
+
+/* Футер */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
