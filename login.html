@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="logstyles.css">
+  <title>Вход | Хачапури Хouse</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="text-logo">Хачапури Хouse</div>
+    <ul class="topnav" id="myTopnav">
+      <li><a class="active" href="index.html">На главную</a></li>
+      <!-- <li><a href="#menu">Меню</a>
+      </li>
+      <li><a href="#about">О нас</a>
+      </li>
+      <li><a href="#contact">Контакты</a>
+      </li>
+      <li class="icon">
+        <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+      </li> -->
+    </ul>
+  </header>
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">Хачапури</div>
+      <div class="title signup">Хouse</div>
+      <br /><br />
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked />
+        <input type="radio" name="slide" id="signup" />
+        <label for="login" class="slide login">Войти</label>
+        <label for="signup" class="slide signup">Создать</label>
+        <div class="slider-tab"></div>
+      </div>
+      <div class="form-inner">
+        <form action="#" class="login">
+          <div class="field">
+            <label for=""><strong>
+                Почта</strong>
+            </label>
+            <input type="text" placeholder="" required />
+          </div>
+          <br />
+          <div class="field">
+            <label><strong>Пароль</strong></label>
+            <input type="password" placeholder="" required />
+          </div>
+          <br />
+          <div class="field btn">
+            <input type="submit" value="Войти" />
+          </div>
+          <div class="signup-link">
+            У вас ещё нет аккаунта? <a href="" class="">Создать</a>
+          </div>
+        </form>
+        <form action="#" class="signup">
+          <div class="field">
+            <label for=""><strong>
+                Имя</strong>
+            </label>
+            <input type="text" placeholder="" required />
+          </div>
+          <br />
+          <div class="field">
+            <label for=""><strong>
+                Почта</strong>
+            </label>
+            <input type="email" placeholder="" required />
+          </div>
+          <br />
+          <div class="field">
+            <label for=""><strong>
+                Пароль</strong>
+            </label>
+            <input type="password" placeholder="" required />
+          </div>
+          <br />
+          <div class="field btn">
+            <input type="submit" value="Создать" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>
